@@ -441,6 +441,11 @@ const useStyles=makeStyles((theme)=>({
    "& img":{
       width:'100%'
    }
+   ,
+   [theme.breakpoints.down('md')]: {
+    width:'100%'
+    
+  },
  }
  ,
  safety__wrapper:{
