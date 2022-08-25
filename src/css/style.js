@@ -185,7 +185,7 @@ const useStyles=makeStyles((theme)=>({
     },
     
     [theme.breakpoints.down('sm')]: {
-      fontSize:'16px !important',
+      fontSize:'18px !important',
     },
      
  },
@@ -219,7 +219,7 @@ const useStyles=makeStyles((theme)=>({
    marginTop:'20px !important',
    color:"#4B4F51",
    lineHeight:'190%',
-   fontSize:'1.5rem !important',
+   fontSize:'18px !important',
    fontWeight:'bold',
    [theme.breakpoints.down('lg')]: {
       fontSize:'16px !important',
@@ -228,7 +228,7 @@ const useStyles=makeStyles((theme)=>({
       fontSize:'14px !important',
     },
     [theme.breakpoints.down('sm')]: {
-      fontSize:'10px !important',
+      fontSize:'13px !important',
       lineHeight:'150%',
     },
      
@@ -331,7 +331,7 @@ const useStyles=makeStyles((theme)=>({
     //   fontSize:'12px !important',
     // },
     [theme.breakpoints.down('sm')]: {
-      fontSize:"12px !important",
+      fontSize:"14px !important",
       lineHeight:'28px !important',
       },
  }
@@ -367,11 +367,11 @@ const useStyles=makeStyles((theme)=>({
    fontWeight:'bold',
    textAlign:'center !important',
    [theme.breakpoints.down('md')]: {
-    fontSize:'12px !important',
+    fontSize:'14px !important',
    
   },
   [theme.breakpoints.down('sm')]: {
-    fontSize:'12px !important',
+    fontSize:'14px !important',
     lineHeight:'28px !important'
    
   },
@@ -569,8 +569,9 @@ const useStyles=makeStyles((theme)=>({
   },
   [theme.breakpoints.down('sm')]: {
     
-    height:'70px',
-    width:'270px'
+    height:'40px',
+    width:'290px',
+    padding:'2px 14px',
   
   },
   [theme.breakpoints.down('xs')]: {
@@ -600,6 +601,13 @@ const useStyles=makeStyles((theme)=>({
     width:'100px',
     fontSize:'13px',
   
+  },
+  [theme.breakpoints.down('sm')]: {
+    
+    height:'35px',
+    width:'70px',
+    fontSize:'14px',
+   
   },
  },
 footer:{

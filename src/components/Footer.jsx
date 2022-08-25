@@ -26,9 +26,9 @@ export default function Footer() {
              
          </Box>
          <Box className={classes.footer__social}>
-            <FacebookIcon sx={{color:"#035755"}}/>
-            <YouTubeIcon sx={{color:'red'}}/>
-            <TwitterIcon sx={{color:"#035755"}}/>
+            <FacebookIcon sx={{color:"#035755",fontSize:'20px'}}/>
+            <YouTubeIcon sx={{color:'red',fontSize:'20px'}}/>
+            <TwitterIcon sx={{color:"#035755",fontSize:'20px'}}/>
 
          </Box>
         </Box>

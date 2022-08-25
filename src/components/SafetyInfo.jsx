@@ -24,7 +24,7 @@ export default function SafetyInfo({children,title,step}) {
          <Typography fontWeight="bold" color="#035755">
             {title}
          </Typography>
-         <Typography lineHeight="4rem" textAlign="justify" color="#4B4F51" fontSize="1.7rem">
+         <Typography lineHeight="4rem" textAlign="justify" color="#4B4F51" fontSize="2rem">
            {children}
          </Typography>
         </Box>
