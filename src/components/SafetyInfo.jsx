@@ -21,7 +21,7 @@ export default function SafetyInfo({children,title,step}) {
            <img src={images[step]} alt=""/>
         </Box>
         <Box>
-         <Typography fontWeight="bold" color="#035755" >
+         <Typography fontWeight="bold" color="#035755" fontSize="20px">
             {title}
          </Typography>
          <Typography lineHeight="4rem" textAlign="justify" color="#4B4F51" fontSize="2rem">
