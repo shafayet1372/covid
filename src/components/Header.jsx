@@ -1,4 +1,4 @@
-import {React,useEffect} from 'react'
+import {React,useEffect,useState} from 'react'
 import { Box } from '@mui/material'
 import useStyles from '../css/style.js'
 import Logo from './Logo.jsx';
@@ -6,8 +6,11 @@ import {Typography} from '@mui/material'
 import {Button} from '@mui/material'
 import HeaderImage from '../image/image1.png'
 import { Link ,animateScroll as scroll} from 'react-scroll'
+import MobileMenu from './MobileMenu.jsx';
+import MenuIcon from '@mui/icons-material/Menu';
 export default function Header() {
     const classes=useStyles()
+    const [expanded,setExpended]=useState(false)
     useEffect(()=>{
     
         scroll.scrollToTop({
@@ -38,7 +41,17 @@ export default function Header() {
              </Link>
            
             </Box>
+            <Box>
+        <MenuIcon className={classes.mobile__menu__icon} onClick={()=>{
+          if(!expanded){
+            setExpended(true)
+            return null
+          }
+          setExpended(false)
+        }}/>
+      </Box>
             </Box>
+            <MobileMenu expand={expanded}/>
            <Box className={classes.header__info}>
             <Box className={classes.header__left}> 
                 <Typography className={classes.header__info__title}>

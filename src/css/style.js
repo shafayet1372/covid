@@ -9,6 +9,7 @@ const useStyles=makeStyles((theme)=>({
   header:{
     display:'flex',
     justifyContent:'space-between',
+    alignItems:'center'
     // marginTop:'10px'
   },
   headerWrapper:{
@@ -113,6 +114,7 @@ const useStyles=makeStyles((theme)=>({
     display:'none !important'
     }
   },
+  
  header__info:{
     display:'flex',
     justifyContent:'space-between',
@@ -232,6 +234,25 @@ const useStyles=makeStyles((theme)=>({
       lineHeight:'150%',
     },
      
+ },
+
+ mobile__menu__icon:{
+   fontSize:'20px !important',
+   [theme.breakpoints.up('md')]: {
+    display:'none !important'
+  },
+ },
+ mobile__menu:{
+  display:'flex !important',
+  flexDirection:'column !important',
+  '& a':{
+    fontSize:'14px',
+    color:"#035755",
+    
+  },
+  [theme.breakpoints.up('md')]: {
+    display:'none !important'
+  },
  },
  header__image:{
     '& img':{
