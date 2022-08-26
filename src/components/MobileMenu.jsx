@@ -1,14 +1,22 @@
 import React from 'react'
 import { Box } from '@mui/system'
+import { styled } from '@mui/material/styles';
 
 import useStyles from '../css/style';
 
-import Accordion from '@mui/material/Accordion';
+import MuiAccordion from '@mui/material/Accordion';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Link ,animateScroll as scroll} from 'react-scroll'
+
+const Accordion = styled((props) => (
+  <MuiAccordion disableGutters elevation={0} square {...props} />
+))(({ theme }) => ({
+  backgroundColor:"#e7c6c636",
+  boxShadow:'none'
+}));
 export default function MobileMenu({expand}) {
     const classes=useStyles()
     
@@ -17,7 +25,7 @@ export default function MobileMenu({expand}) {
      
 
       <Box className={classes.mobile__menu}>
-      <Accordion expanded={expand} >
+      <Accordion expanded={expand}  >
         <AccordionSummary
         sx={{display:"none"}}
           
